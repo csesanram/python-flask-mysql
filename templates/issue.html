@@ -1,0 +1,9 @@
+{% extends 'layout.html'%}
+{% block body %}
+    <h1>Issue</h1>
+    <ul class="list-group">
+        {% for issue in issues%}
+        <li class="list-group-item"><a href="issuebyid/{{issue.id}}">{{issue.issue}}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock%}
